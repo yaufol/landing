@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <title>Products</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .header {
             padding: 10px 0;
             position: fixed;
@@ -14,6 +18,58 @@
             z-index: 997;
             background: rgba(138, 144, 255, 0.9)
         }
+
+        .menu-nav-item {
+            list-style: none;
+        }
+
+        .menu-nav-link {
+            text-decoration: none;
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 12px;
+            text-transform: uppercase;
+            outline: none;
+
+        }
+        .section-banner{
+            background: url(img/banner-bg.jpg);
+            background-size: cover;
+        }
+        .container{
+            max-width:1140px;
+            padding:0 15px;
+            margin:0 auto;
+        }
+        .banner{
+            margin-top: 120px;
+            padding: 120px 0;
+        }
+        .banner-text-header{
+            color:white;
+            font-size: 48px;
+            font-weight: 600px;
+            text-align:center;
+        }
+        .banner-text-body{
+            text-align: center;
+            padding:10px 0;
+        } 
+        .banner-text-body a{
+            text-decoration: none;
+            color:white;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        .banner-text-body span{
+            color:white;
+            font-weight: 300;
+            font-size: 14px;
+            padding:0 5px;
+        }
+
+
     </style>
 </head>
 
@@ -22,19 +78,29 @@
         <div class="container">
             <div class="menu">
                 <div class="menu-logo">
-                    <a href="#section-name" class="menu-logo-link">
-                        <img src="img/logo.png">
-                    </a>
+                    <img src="img/logo.png">
                 </div>
                 <div class="menu-nav-container">
                     <div class="container">
                         <ul class="menu-nav">
-                            <li class="menu-nav item"><a href="#" class="menu-nav link">home</a></li>
-                            <li class="menu-nav item"><a href="#" class="menu-nav link">about</a></li>
-                            <li class="menu-nav item"><a href="#" class="menu-nav link">service</a></li>
-                            <li class="menu-nav item"><a href="#" class="menu-nav link">products</a></li>
-                            <li class="menu-nav item"><a href="#" class="menu-nav link">blog</a></li>
-                            <li class="menu-nav item"><a href="#" class="menu-nav link">contacts</a></li>
+                            <li class="menu-nav-item">
+                                <a href="#" class="menu-nav-link">home</a>
+                            </li>
+                            <li class="menu-nav-item">
+                                <a href="#" class="menu-nav-link">about</a>
+                            </li>
+                            <li class="menu-nav-item">
+                                <a href="#" class="menu-nav-link">service</a>
+                            </li>
+                            <li class="menu-nav-item">
+                                <a href="#" class="menu-nav-link">products</a>
+                            </li>
+                            <li class="menu-nav-item">
+                                <a href="#" class="menu-nav-link">blog</a>
+                            </li>
+                            <li class="menu-nav-item">
+                                <a href="#" class="menu-nav-link">contacts</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -42,9 +108,45 @@
             </div>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="section section-banner">
+            <div class="container">
+                <div class="banner-container">
+                    <div class="banner">
+                        <div class="banner-text">
+                            <h1 class="banner-text-header">Products</h1>
+                            <div class="banner-text-body">
+                            <a href="#">Home</a>
+                            <span>→</span>
+                            <a href="#">Products</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-main">
+                <div class="container">
+                    <div class="section-header"><h1>Featured Robotics Products to Show</h1>
+                    <p>Who are in extremely love width eco friendly system.</p></div>
+                    <div class="product-card-container">
+                    <div class="product-card-wrap">
+                     <div class="product-card">
+                         <div class="product-card-image-wrap"><img class="product-card_image" src="img/p1.png"></div>
+                         <div class="product-card-details">
+                             <h4 class="product-card-header">The Upper Eye</h4>
+                             <p class="product-card-text">Who are in extremely love with eco friendly system</p>
+                             <a class="product-card-button" href="#">View Details</a>
+                         </div>
+                     </div>  
+                     </div>
+                    </div>
+                </div>
+            </section>
+            
+    </main>
+    
     <footer class="footer">
-        <a name="section-name">
+
     </footer>
 </body>
 
